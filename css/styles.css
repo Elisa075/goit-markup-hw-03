@@ -1,11 +1,46 @@
+/* Resetarea stilurilor globale */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stiluri globale */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
 }
 
+/* Container */
+.container {
+    width: 1158px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header */
+.site-header {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation menu */
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
 /* Logo styles */
-.logo {
+.logo, .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -19,51 +54,17 @@ body {
     color: #2e2f42;
 }
 
-/* Navigation menu */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-.menu-link {
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-decoration: none;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-    color: #404bbf;
-}
-
-/* Address styles */
-.contact-info {
-    font-style: normal;
-}
-
-.contact-link {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-decoration: none;
-}
-
-.contact-link:hover,
-.contact-link:focus {
-    color: #404bbf;
+/* Section styling */
+.section {
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 /* Intro section */
 .intro {
     background-color: #2e2f42;
     text-align: center;
+    padding: 60px 0;
 }
 
 .intro-title {
@@ -108,6 +109,7 @@ nav ul li {
 .team {
     background-color: #F4F4FD;
     text-align: center;
+    padding: 60px 0;
 }
 
 .team-title {
@@ -118,19 +120,21 @@ nav ul li {
     color: #2e2f42;
 }
 
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
 /* Footer styles */
 .footer {
     background-color: #2e2f42;
     text-align: center;
     padding: 20px 0;
+    color: #ffffff;
 }
 
 .logo-footer {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
+    margin-bottom: 10px;
 }
