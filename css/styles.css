@@ -1,134 +1,8 @@
-/* Resetarea stilurilor globale */
-body, h1, h2, h3, h4, h5, h6, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Stiluri globale */
-body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
-}
-
-/* Container */
-.container {
-    width: 1158px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Header */
-.site-header {
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.site-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    margin-right: 76px;
-}
-
-.logo-span {
-    color: #2e2f42;
-}
-
-.nav-list {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-}
-
-.main-nav {
-    padding: 24px 0;
-}
-
-/* Contact Info */
-.contact-info ul {
-    display: flex;
-    gap: 40px;
-}
-
-.contact-link {
-    color: #434455;
-    text-decoration: none;
-}
-
-.contact-link:hover,
-.contact-link:focus {
-    text-decoration: underline;
-}
-
-/* Section styling */
-.section {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
-/* Intro section */
-.intro {
-    background-color: #2e2f42;
-    text-align: center;
-    padding: 60px 0;
-}
-
-.intro-title {
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-}
-
-.btn-order {
-    background-color: #4D5AE5;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.btn-order:hover,
-.btn-order:focus {
-    background-color: #404BBF;
-}
-
-/* Feature section */
-.feature-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.feature-description {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 /* Team section */
 .team {
     background-color: #F4F4FD;
     text-align: center;
-    padding: 60px 0;
+    padding: 120px 0; /* Padding interior pentru conținutul secțiunii */
 }
 
 .team-title {
@@ -137,23 +11,45 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px; /* Spațiu între titlu și lista de echipă */
 }
 
 .team-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 24px; /* Dimensiunea spațiului dintre elementele listei */
     list-style: none;
 }
 
-/* Footer styles */
-.footer {
-    background-color: #2e2f42;
-    text-align: center;
-    padding: 20px 0;
-    color: #ffffff;
+.team-list li {
+    width: calc((100% - 3 * 24px) / 4); /* Lățimea fiecărui element din listă */
+    margin-right: 24px; /* Spațiu între elementele listei */
 }
 
-.logo-footer {
-    margin-bottom: 10px;
+.team-list li:last-child {
+    margin-right: 0; /* Anulăm spațiul pentru ultimul element din listă */
+}
+
+.team-list li img {
+    width: 100%;
+    border-radius: 0px 0px 4px 4px; /* Raze colțuri de jos ale blocului */
+}
+
+.team-card {
+    padding: 32px 0; /* Padding interior pentru containerul numelui și titlului poziției */
+}
+
+.team-card h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center; /* Aliniere centrul textului */
+    margin-bottom: 8px; /* Spațiu între titlu și paragraf */
+}
+
+.team-card p {
+    text-align: center; /* Aliniere centrul paragrafului */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
 }
